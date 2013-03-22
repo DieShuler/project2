@@ -1,4 +1,9 @@
 Firstblood::Application.routes.draw do
+
+  get 'about' => 'pages#about'
+  get 'gotcha' => 'pages#gotcha'
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
