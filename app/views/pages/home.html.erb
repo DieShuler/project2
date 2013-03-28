@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+	<h2>You have demonstrated the secret password correctly.</h2>
+<% else %>
+
 <div class="hero-unit">
 	<h1>Das Home Page</h1>
 	<p>This isn't really a home page to some super cool
@@ -5,6 +9,7 @@
 		application. It's just a project I'm working on.
 	</p>
 	<p>
-		<%= link_to "Start Pushing Buttons now!", "gotcha", class: "btn btn-primary btn-large"%>
+		<%= link_to "Sign up for cool things!", new_user_registration_path, class: "btn btn-primary btn-large"%>
 	</p>
 </div>
+<% end %>

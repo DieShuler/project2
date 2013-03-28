@@ -1,5 +1,7 @@
 Firstblood::Application.routes.draw do
 
+  devise_for :users
+
   get 'about' => 'pages#about'
   get 'gotcha' => 'pages#gotcha'
   root :to => 'pages#home'
