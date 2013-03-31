@@ -1,5 +1,12 @@
 <% if user_signed_in? %>
-	<h2>You have demonstrated the secret password correctly.</h2>
+	<div class="hero-unit">
+  	<h2>You have demonstrated the secret password correctly.</h2>
+	  <p>
+			<%= link_to "Put some stuff on the wall", index_path(@pins), class: "btn btn-primary btn-large" %>
+		  </p>
+  </div>
+	
+
 <% else %>
 
 <div class="hero-unit">
