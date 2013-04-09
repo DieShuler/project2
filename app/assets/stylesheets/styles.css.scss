@@ -6,7 +6,7 @@ $baseFontFamily: Wellfleet;
 
 $btnPrimaryBackground: maroon;
 $navbarBackgroundHighlight: white;
-$navbarBackground: white;
+$navbarBackground: gray;
 
 @import 'bootstrap';
 
@@ -18,7 +18,7 @@ body {
 
 .navbar-inner{
 	@include box-shadow(none !important);
-	border: 0;
+	border: 2px;
 }
 
 .footer {
@@ -42,6 +42,7 @@ body {
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #444;
 	width: 214px;
+	height: auto;
 }
 
 .box img{
